@@ -54,7 +54,12 @@ typeComboBox = new JComboBox<>(new String[]{"Length", "Weight", "Temperature"});
 
     toComboBox.addItem("Pounds");
     toComboBox.addItem("Kilograms");
-  }  else if (selectedType.equals("Weight")) {
+  }  else if (selectedType.equals("Temperature")) {
+    fromComboBox.addItem("Celsius");
+    fromComboBox.addItem("Kelvin");
+
+    toComboBox.addItem("Kelvin");
+    toComboBox.addItem("Celsius");
   }
 ```
 
