@@ -62,5 +62,23 @@ typeComboBox = new JComboBox<>(new String[]{"Length", "Weight", "Temperature"});
     toComboBox.addItem("Celsius");
   }
 ```
+3. Finally, Modify function convert
 
+```java
+if (fromUnit.equals("Meters") && toUnit.equals("Centimeters")) {
+            convertedValue = value * 100;
+        } else if (fromUnit.equals("Meters") && toUnit.equals("Feet")) {
+            convertedValue = value * 3.28084;
+        } else if (fromUnit.equals("Centimeters") && toUnit.equals("Meters")) {
+            convertedValue = value / 100;
+        } else if (fromUnit.equals("Centimeters") && toUnit.equals("Feet")) {
+            convertedValue = value * 0.0328084;
+        } else if (fromUnit.equals("Feet") && toUnit.equals("Meters")) {
+            convertedValue = value * 0.3048;
+        } else if (fromUnit.equals("Kilograms") && toUnit.equals("Pounds")) {
+        convertedValue = value * 2.20462;
+        } else if (fromUnit.equals("Pounds") && toUnit.equals("Kilograms")) {
+            convertedValue = value * 0.453592;
+        } 
+```
 
