@@ -62,7 +62,7 @@ typeComboBox = new JComboBox<>(new String[]{"Length", "Weight", "Temperature"});
     toComboBox.addItem("Celsius");
   }
 ```
-3. Finally, Modify `function convert`
+3. Finally, Modify function `convert`
 
 ```java
 if (fromUnit.equals("Meters") && toUnit.equals("Centimeters")) {
