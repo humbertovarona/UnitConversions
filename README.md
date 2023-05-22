@@ -3,7 +3,7 @@
 Java Student Demo, Case Study: UnitConverterApp
 
 <p align="center">
-<img src="/image/unitConverter_Screenshot.p n g" width="300">
+<img src="/image/unitConverter_screenshot.png" width="300">
 </p>
 
 # Version
