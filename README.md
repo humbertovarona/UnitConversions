@@ -26,7 +26,7 @@ java UnitConverterApp.java
 
 # How to update the code?
 
-1. For example, we will add the magnitude temperature, substitute in UnitConverterApp
+1. For example, we will add the magnitude temperature, substitute in `UnitConverterApp`
 
 ```java
 typeComboBox = new JComboBox<>(new String[]{"Length", "Weight"});  
@@ -37,7 +37,7 @@ by
 typeComboBox = new JComboBox<>(new String[]{"Length", "Weight", "Temperature"});  
 ```
 
-2. Modify class TypeComboBoxListener
+2. Modify `class TypeComboBoxListener`
 
 ```java
  if (selectedType.equals("Length")) {
@@ -62,7 +62,7 @@ typeComboBox = new JComboBox<>(new String[]{"Length", "Weight", "Temperature"});
     toComboBox.addItem("Celsius");
   }
 ```
-3. Finally, Modify function convert
+3. Finally, Modify `function convert`
 
 ```java
 if (fromUnit.equals("Meters") && toUnit.equals("Centimeters")) {
